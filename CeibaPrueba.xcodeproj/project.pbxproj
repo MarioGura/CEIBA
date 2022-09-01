@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F0E9DAB28BFAE2B0022D9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DAA28BFAE2B0022D9DD /* AppDelegate.swift */; };
+		4F0E9DAD28BFAE2B0022D9DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DAC28BFAE2B0022D9DD /* SceneDelegate.swift */; };
+		4F0E9DB428BFAE2C0022D9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DB328BFAE2C0022D9DD /* Assets.xcassets */; };
+		4F0E9DB728BFAE2C0022D9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DB528BFAE2C0022D9DD /* LaunchScreen.storyboard */; };
+		4F0E9DE128BFB2740022D9DD /* UsersCeibaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DDB28BFB2740022D9DD /* UsersCeibaPresenter.swift */; };
+		4F0E9DE228BFB2740022D9DD /* UsersCeibaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DDC28BFB2740022D9DD /* UsersCeibaRouter.swift */; };
+		4F0E9DE328BFB2740022D9DD /* UsersCeibaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DDD28BFB2740022D9DD /* UsersCeibaViewController.swift */; };
+		4F0E9DE428BFB2740022D9DD /* UsersCeibaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DDE28BFB2740022D9DD /* UsersCeibaProtocols.swift */; };
+		4F0E9DE528BFB2740022D9DD /* UsersCeibaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DDF28BFB2740022D9DD /* UsersCeibaInteractor.swift */; };
+		4F0E9DE628BFB2740022D9DD /* UsersCeibaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DE028BFB2740022D9DD /* UsersCeibaViewController.xib */; };
+		4F0E9DEB28BFBC2E0022D9DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DEA28BFBC2E0022D9DD /* Persistence.swift */; };
+		4F0E9DED28BFBC3A0022D9DD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DEC28BFBC3A0022D9DD /* Network.swift */; };
+		4F0E9DEF28BFBCB30022D9DD /* UsersCeibaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DEE28BFBCB30022D9DD /* UsersCeibaEntity.swift */; };
+		4F0E9DF428BFBDFE0022D9DD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DF228BFBDFE0022D9DD /* UserTableViewCell.swift */; };
+		4F0E9DF528BFBDFE0022D9DD /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DF328BFBDFE0022D9DD /* UserTableViewCell.xib */; };
+		4F0E9DFA28BFBF1C0022D9DD /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DF828BFBF1B0022D9DD /* PostsViewController.swift */; };
+		4F0E9DFB28BFBF1C0022D9DD /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DF928BFBF1B0022D9DD /* PostsViewController.xib */; };
+		4F0E9DFF28BFBF9D0022D9DD /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9DFD28BFBF9C0022D9DD /* PostsTableViewCell.swift */; };
+		4F0E9E0028BFBF9D0022D9DD /* PostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F0E9DFE28BFBF9C0022D9DD /* PostsTableViewCell.xib */; };
+		4F0E9E0428C003740022D9DD /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9E0328C003740022D9DD /* AnimationView.swift */; };
+		4F0E9E0628C00C130022D9DD /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0E9E0528C00C130022D9DD /* ViewController+Extension.swift */; };
+		6D3D426CDEFCB4D8EFC98E57 /* Pods_CeibaPruebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4523BADC011786354C63414E /* Pods_CeibaPruebaTests.framework */; };
+		72FB0DB4E0368AA30570FCB1 /* Pods_CeibaPrueba_CeibaPruebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E622322847301E57B1382B /* Pods_CeibaPrueba_CeibaPruebaUITests.framework */; };
+		D1D5FF082E5660EADAD8F2C5 /* Pods_CeibaPrueba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D03165A155BEA9BDB9AA4B /* Pods_CeibaPrueba.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F0E9DBE28BFAE2C0022D9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F0E9D9F28BFAE2B0022D9DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F0E9DA628BFAE2B0022D9DD;
+			remoteInfo = CeibaPrueba;
+		};
+		4F0E9DC828BFAE2C0022D9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F0E9D9F28BFAE2B0022D9DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F0E9DA628BFAE2B0022D9DD;
+			remoteInfo = CeibaPrueba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E622322847301E57B1382B /* Pods_CeibaPrueba_CeibaPruebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPrueba_CeibaPruebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		082BD1013F388BB21E1C5EC2 /* Pods-CeibaPrueba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPrueba.release.xcconfig"; path = "Target Support Files/Pods-CeibaPrueba/Pods-CeibaPrueba.release.xcconfig"; sourceTree = "<group>"; };
+		4523BADC011786354C63414E /* Pods_CeibaPruebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPruebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D03165A155BEA9BDB9AA4B /* Pods_CeibaPrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49514CBE5ECE7BD24BF3598A /* Pods-CeibaPrueba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPrueba.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPrueba/Pods-CeibaPrueba.debug.xcconfig"; sourceTree = "<group>"; };
+		4F0E9DA728BFAE2B0022D9DD /* CeibaPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0E9DAA28BFAE2B0022D9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F0E9DAC28BFAE2B0022D9DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F0E9DB328BFAE2C0022D9DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F0E9DB628BFAE2C0022D9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F0E9DB828BFAE2C0022D9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0E9DBD28BFAE2C0022D9DD /* CeibaPruebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaPruebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0E9DC728BFAE2C0022D9DD /* CeibaPruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaPruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0E9DDB28BFB2740022D9DD /* UsersCeibaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaPresenter.swift; sourceTree = "<group>"; };
+		4F0E9DDC28BFB2740022D9DD /* UsersCeibaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaRouter.swift; sourceTree = "<group>"; };
+		4F0E9DDD28BFB2740022D9DD /* UsersCeibaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaViewController.swift; sourceTree = "<group>"; };
+		4F0E9DDE28BFB2740022D9DD /* UsersCeibaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaProtocols.swift; sourceTree = "<group>"; };
+		4F0E9DDF28BFB2740022D9DD /* UsersCeibaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaInteractor.swift; sourceTree = "<group>"; };
+		4F0E9DE028BFB2740022D9DD /* UsersCeibaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersCeibaViewController.xib; sourceTree = "<group>"; };
+		4F0E9DEA28BFBC2E0022D9DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4F0E9DEC28BFBC3A0022D9DD /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4F0E9DEE28BFBCB30022D9DD /* UsersCeibaEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCeibaEntity.swift; sourceTree = "<group>"; };
+		4F0E9DF228BFBDFE0022D9DD /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		4F0E9DF328BFBDFE0022D9DD /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		4F0E9DF828BFBF1B0022D9DD /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		4F0E9DF928BFBF1B0022D9DD /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
+		4F0E9DFD28BFBF9C0022D9DD /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		4F0E9DFE28BFBF9C0022D9DD /* PostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsTableViewCell.xib; sourceTree = "<group>"; };
+		4F0E9E0328C003740022D9DD /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		4F0E9E0528C00C130022D9DD /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		54018391B21BFA451A4C821A /* Pods-CeibaPrueba-CeibaPruebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPrueba-CeibaPruebaUITests.release.xcconfig"; path = "Target Support Files/Pods-CeibaPrueba-CeibaPruebaUITests/Pods-CeibaPrueba-CeibaPruebaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC26AFE3F575644BB2129F2F /* Pods-CeibaPrueba-CeibaPruebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPrueba-CeibaPruebaUITests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPrueba-CeibaPruebaUITests/Pods-CeibaPrueba-CeibaPruebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F950C5AAA77EA055BA0ECC0B /* Pods-CeibaPruebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPruebaTests.release.xcconfig"; path = "Target Support Files/Pods-CeibaPruebaTests/Pods-CeibaPruebaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFCB49B678A2331C65B95DE0 /* Pods-CeibaPruebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPruebaTests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPruebaTests/Pods-CeibaPruebaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F0E9DA428BFAE2B0022D9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D5FF082E5660EADAD8F2C5 /* Pods_CeibaPrueba.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DBA28BFAE2C0022D9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3D426CDEFCB4D8EFC98E57 /* Pods_CeibaPruebaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DC428BFAE2C0022D9DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FB0DB4E0368AA30570FCB1 /* Pods_CeibaPrueba_CeibaPruebaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BDEB387F352267800C9A74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49514CBE5ECE7BD24BF3598A /* Pods-CeibaPrueba.debug.xcconfig */,
+				082BD1013F388BB21E1C5EC2 /* Pods-CeibaPrueba.release.xcconfig */,
+				DC26AFE3F575644BB2129F2F /* Pods-CeibaPrueba-CeibaPruebaUITests.debug.xcconfig */,
+				54018391B21BFA451A4C821A /* Pods-CeibaPrueba-CeibaPruebaUITests.release.xcconfig */,
+				FFCB49B678A2331C65B95DE0 /* Pods-CeibaPruebaTests.debug.xcconfig */,
+				F950C5AAA77EA055BA0ECC0B /* Pods-CeibaPruebaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F0E9D9E28BFAE2B0022D9DD = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DA928BFAE2B0022D9DD /* CeibaPrueba */,
+				4F0E9DA828BFAE2B0022D9DD /* Products */,
+				04BDEB387F352267800C9A74 /* Pods */,
+				E2232726E3E1A15A2B771EE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F0E9DA828BFAE2B0022D9DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DA728BFAE2B0022D9DD /* CeibaPrueba.app */,
+				4F0E9DBD28BFAE2C0022D9DD /* CeibaPruebaTests.xctest */,
+				4F0E9DC728BFAE2C0022D9DD /* CeibaPruebaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F0E9DA928BFAE2B0022D9DD /* CeibaPrueba */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DDA28BFB2490022D9DD /* Modules */,
+				4F0E9DE928BFBBF60022D9DD /* Services */,
+				4F0E9E0228BFFD1C0022D9DD /* Utils */,
+				4F0E9DAA28BFAE2B0022D9DD /* AppDelegate.swift */,
+				4F0E9DAC28BFAE2B0022D9DD /* SceneDelegate.swift */,
+				4F0E9DB328BFAE2C0022D9DD /* Assets.xcassets */,
+				4F0E9DB528BFAE2C0022D9DD /* LaunchScreen.storyboard */,
+				4F0E9DB828BFAE2C0022D9DD /* Info.plist */,
+			);
+			path = CeibaPrueba;
+			sourceTree = "<group>";
+		};
+		4F0E9DDA28BFB2490022D9DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9E0828C0384D0022D9DD /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4F0E9DE928BFBBF60022D9DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DEA28BFBC2E0022D9DD /* Persistence.swift */,
+				4F0E9DEC28BFBC3A0022D9DD /* Network.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F0E9DF028BFBCC60022D9DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9E0A28C039410022D9DD /* UsersView */,
+				4F0E9DF628BFBE710022D9DD /* PostsView */,
+				4F0E9E0928C039070022D9DD /* Symbols */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F0E9DF128BFBDDB0022D9DD /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DF228BFBDFE0022D9DD /* UserTableViewCell.swift */,
+				4F0E9DF328BFBDFE0022D9DD /* UserTableViewCell.xib */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		4F0E9DF628BFBE710022D9DD /* PostsView */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DF828BFBF1B0022D9DD /* PostsViewController.swift */,
+				4F0E9DF928BFBF1B0022D9DD /* PostsViewController.xib */,
+			);
+			path = PostsView;
+			sourceTree = "<group>";
+		};
+		4F0E9DFC28BFBF710022D9DD /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DFD28BFBF9C0022D9DD /* PostsTableViewCell.swift */,
+				4F0E9DFE28BFBF9C0022D9DD /* PostsTableViewCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		4F0E9E0228BFFD1C0022D9DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9E0728C037330022D9DD /* Extensions */,
+				4F0E9E0328C003740022D9DD /* AnimationView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F0E9E0728C037330022D9DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9E0528C00C130022D9DD /* ViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F0E9E0828C0384D0022D9DD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DF028BFBCC60022D9DD /* View */,
+				4F0E9DDF28BFB2740022D9DD /* UsersCeibaInteractor.swift */,
+				4F0E9DDB28BFB2740022D9DD /* UsersCeibaPresenter.swift */,
+				4F0E9DEE28BFBCB30022D9DD /* UsersCeibaEntity.swift */,
+				4F0E9DDC28BFB2740022D9DD /* UsersCeibaRouter.swift */,
+				4F0E9DDE28BFB2740022D9DD /* UsersCeibaProtocols.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4F0E9E0928C039070022D9DD /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DF128BFBDDB0022D9DD /* UserCell */,
+				4F0E9DFC28BFBF710022D9DD /* PostCell */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		4F0E9E0A28C039410022D9DD /* UsersView */ = {
+			isa = PBXGroup;
+			children = (
+				4F0E9DDD28BFB2740022D9DD /* UsersCeibaViewController.swift */,
+				4F0E9DE028BFB2740022D9DD /* UsersCeibaViewController.xib */,
+			);
+			path = UsersView;
+			sourceTree = "<group>";
+		};
+		E2232726E3E1A15A2B771EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D03165A155BEA9BDB9AA4B /* Pods_CeibaPrueba.framework */,
+				02E622322847301E57B1382B /* Pods_CeibaPrueba_CeibaPruebaUITests.framework */,
+				4523BADC011786354C63414E /* Pods_CeibaPruebaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F0E9DA628BFAE2B0022D9DD /* CeibaPrueba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0E9DD128BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPrueba" */;
+			buildPhases = (
+				A86A19491C6D6E09B54265E1 /* [CP] Check Pods Manifest.lock */,
+				4F0E9DA328BFAE2B0022D9DD /* Sources */,
+				4F0E9DA428BFAE2B0022D9DD /* Frameworks */,
+				4F0E9DA528BFAE2B0022D9DD /* Resources */,
+				3C10E077ABC610324BCB3BB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeibaPrueba;
+			productName = CeibaPrueba;
+			productReference = 4F0E9DA728BFAE2B0022D9DD /* CeibaPrueba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F0E9DBC28BFAE2C0022D9DD /* CeibaPruebaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0E9DD428BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPruebaTests" */;
+			buildPhases = (
+				6E3E482F02A819E4549C0344 /* [CP] Check Pods Manifest.lock */,
+				4F0E9DB928BFAE2C0022D9DD /* Sources */,
+				4F0E9DBA28BFAE2C0022D9DD /* Frameworks */,
+				4F0E9DBB28BFAE2C0022D9DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F0E9DBF28BFAE2C0022D9DD /* PBXTargetDependency */,
+			);
+			name = CeibaPruebaTests;
+			productName = CeibaPruebaTests;
+			productReference = 4F0E9DBD28BFAE2C0022D9DD /* CeibaPruebaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F0E9DC628BFAE2C0022D9DD /* CeibaPruebaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0E9DD728BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPruebaUITests" */;
+			buildPhases = (
+				2BD5D3BFAE58A4865A092FF8 /* [CP] Check Pods Manifest.lock */,
+				4F0E9DC328BFAE2C0022D9DD /* Sources */,
+				4F0E9DC428BFAE2C0022D9DD /* Frameworks */,
+				4F0E9DC528BFAE2C0022D9DD /* Resources */,
+				8FDA5760EFDA20C0B50A86FC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F0E9DC928BFAE2C0022D9DD /* PBXTargetDependency */,
+			);
+			name = CeibaPruebaUITests;
+			productName = CeibaPruebaUITests;
+			productReference = 4F0E9DC728BFAE2C0022D9DD /* CeibaPruebaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F0E9D9F28BFAE2B0022D9DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4F0E9DA628BFAE2B0022D9DD = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					4F0E9DBC28BFAE2C0022D9DD = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4F0E9DA628BFAE2B0022D9DD;
+					};
+					4F0E9DC628BFAE2C0022D9DD = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4F0E9DA628BFAE2B0022D9DD;
+					};
+				};
+			};
+			buildConfigurationList = 4F0E9DA228BFAE2B0022D9DD /* Build configuration list for PBXProject "CeibaPrueba" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F0E9D9E28BFAE2B0022D9DD;
+			productRefGroup = 4F0E9DA828BFAE2B0022D9DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F0E9DA628BFAE2B0022D9DD /* CeibaPrueba */,
+				4F0E9DBC28BFAE2C0022D9DD /* CeibaPruebaTests */,
+				4F0E9DC628BFAE2C0022D9DD /* CeibaPruebaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F0E9DA528BFAE2B0022D9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0E9DF528BFBDFE0022D9DD /* UserTableViewCell.xib in Resources */,
+				4F0E9DB728BFAE2C0022D9DD /* LaunchScreen.storyboard in Resources */,
+				4F0E9DB428BFAE2C0022D9DD /* Assets.xcassets in Resources */,
+				4F0E9E0028BFBF9D0022D9DD /* PostsTableViewCell.xib in Resources */,
+				4F0E9DFB28BFBF1C0022D9DD /* PostsViewController.xib in Resources */,
+				4F0E9DE628BFB2740022D9DD /* UsersCeibaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DBB28BFAE2C0022D9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DC528BFAE2C0022D9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD5D3BFAE58A4865A092FF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaPrueba-CeibaPruebaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C10E077ABC610324BCB3BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba/Pods-CeibaPrueba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba/Pods-CeibaPrueba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba/Pods-CeibaPrueba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3E482F02A819E4549C0344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaPruebaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FDA5760EFDA20C0B50A86FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba-CeibaPruebaUITests/Pods-CeibaPrueba-CeibaPruebaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba-CeibaPruebaUITests/Pods-CeibaPrueba-CeibaPruebaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CeibaPrueba-CeibaPruebaUITests/Pods-CeibaPrueba-CeibaPruebaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86A19491C6D6E09B54265E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CeibaPrueba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F0E9DA328BFAE2B0022D9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0E9DEF28BFBCB30022D9DD /* UsersCeibaEntity.swift in Sources */,
+				4F0E9DEB28BFBC2E0022D9DD /* Persistence.swift in Sources */,
+				4F0E9DE428BFB2740022D9DD /* UsersCeibaProtocols.swift in Sources */,
+				4F0E9DF428BFBDFE0022D9DD /* UserTableViewCell.swift in Sources */,
+				4F0E9DFF28BFBF9D0022D9DD /* PostsTableViewCell.swift in Sources */,
+				4F0E9DAB28BFAE2B0022D9DD /* AppDelegate.swift in Sources */,
+				4F0E9DE328BFB2740022D9DD /* UsersCeibaViewController.swift in Sources */,
+				4F0E9DFA28BFBF1C0022D9DD /* PostsViewController.swift in Sources */,
+				4F0E9E0628C00C130022D9DD /* ViewController+Extension.swift in Sources */,
+				4F0E9DED28BFBC3A0022D9DD /* Network.swift in Sources */,
+				4F0E9DE228BFB2740022D9DD /* UsersCeibaRouter.swift in Sources */,
+				4F0E9DE128BFB2740022D9DD /* UsersCeibaPresenter.swift in Sources */,
+				4F0E9DE528BFB2740022D9DD /* UsersCeibaInteractor.swift in Sources */,
+				4F0E9E0428C003740022D9DD /* AnimationView.swift in Sources */,
+				4F0E9DAD28BFAE2B0022D9DD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DB928BFAE2C0022D9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0E9DC328BFAE2C0022D9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F0E9DBF28BFAE2C0022D9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F0E9DA628BFAE2B0022D9DD /* CeibaPrueba */;
+			targetProxy = 4F0E9DBE28BFAE2C0022D9DD /* PBXContainerItemProxy */;
+		};
+		4F0E9DC928BFAE2C0022D9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F0E9DA628BFAE2B0022D9DD /* CeibaPrueba */;
+			targetProxy = 4F0E9DC828BFAE2C0022D9DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F0E9DB528BFAE2C0022D9DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0E9DB628BFAE2C0022D9DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F0E9DCF28BFAE2C0022D9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F0E9DD028BFAE2C0022D9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F0E9DD228BFAE2C0022D9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49514CBE5ECE7BD24BF3598A /* Pods-CeibaPrueba.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CeibaPrueba/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = UsersCeibaViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPrueba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F0E9DD328BFAE2C0022D9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082BD1013F388BB21E1C5EC2 /* Pods-CeibaPrueba.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CeibaPrueba/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = UsersCeibaViewController;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPrueba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F0E9DD528BFAE2C0022D9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCB49B678A2331C65B95DE0 /* Pods-CeibaPruebaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPruebaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaPrueba.app/CeibaPrueba";
+			};
+			name = Debug;
+		};
+		4F0E9DD628BFAE2C0022D9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F950C5AAA77EA055BA0ECC0B /* Pods-CeibaPruebaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPruebaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CeibaPrueba.app/CeibaPrueba";
+			};
+			name = Release;
+		};
+		4F0E9DD828BFAE2C0022D9DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC26AFE3F575644BB2129F2F /* Pods-CeibaPrueba-CeibaPruebaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPruebaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaPrueba;
+			};
+			name = Debug;
+		};
+		4F0E9DD928BFAE2C0022D9DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54018391B21BFA451A4C821A /* Pods-CeibaPrueba-CeibaPruebaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ceibaPrueba.CeibaPruebaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaPrueba;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F0E9DA228BFAE2B0022D9DD /* Build configuration list for PBXProject "CeibaPrueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E9DCF28BFAE2C0022D9DD /* Debug */,
+				4F0E9DD028BFAE2C0022D9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0E9DD128BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPrueba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E9DD228BFAE2C0022D9DD /* Debug */,
+				4F0E9DD328BFAE2C0022D9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0E9DD428BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPruebaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E9DD528BFAE2C0022D9DD /* Debug */,
+				4F0E9DD628BFAE2C0022D9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0E9DD728BFAE2C0022D9DD /* Build configuration list for PBXNativeTarget "CeibaPruebaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0E9DD828BFAE2C0022D9DD /* Debug */,
+				4F0E9DD928BFAE2C0022D9DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F0E9D9F28BFAE2B0022D9DD /* Project object */;
+}
